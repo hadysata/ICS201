@@ -19,7 +19,7 @@ public class MyPoint {
     }
 
     double distance(MyPoint point) {
-        return distance(point.getX(), point.getY());
+        return distance(point.x, point.y);
     }
 
     static double distance(MyPoint point1, MyPoint point2) {
