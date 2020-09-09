@@ -10,42 +10,42 @@ public class Queue {
     void enqueue(int v) {
 
         if (size >= elements.length) {
-            // array size will be doubled once the number of the elements exceeds the size
+            int[] tempArray = elements.clone();
+            elements = new int[tempArray.length * 2];
 
-            int[] tempElements = elements.clone();
-            elements = new int[tempElements.length * 2];
-
-            for (int i = 0; i < tempElements.length; i++) {
-                elements[i] = tempElements[i];
+            for (int i = 0; i < tempArray.length; i++) {
+                elements[i] = tempArray[i];
             }
+
         }
 
         elements[size] = v;
+
         size++;
     }
 
-    public int dequeue() {
-        int[] tempElements = elements.clone();
-        elements = new int[tempElements.length]; // Clear the elements array
+    int dequeue() {
 
-        for (int i = 0; i < tempElements.length - 1; i++) {
-            elements[i] = tempElements[i + 1];
+        int firstElement = elements[0];
+
+        for (int i = 0; i < size - 1; i++) {
+            elements[i] = elements[i + 1];
         }
 
         size--;
 
-        return tempElements[0];
+        return firstElement;
     }
 
-    public boolean empty() {
-        if (size <= 0)
-            return true;
-        else
+    boolean empty() {
+        if (size > 0)
             return false;
+        else
+            return true;
     }
 
-    public int getSize() {
-        return this.size;
+    int getSize() {
+        return size;
     }
 
 }
