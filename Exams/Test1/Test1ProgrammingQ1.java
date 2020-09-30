@@ -30,10 +30,11 @@ class Bicycle extends Vehicle {
     private int gears;
 
     public Bicycle() {
+        super(60, 2);
     }
 
     public Bicycle(int gears) {
-        super();
+        super(60, 2);
         this.gears = gears;
     }
 
@@ -47,9 +48,7 @@ class Bicycle extends Vehicle {
         return String.format("Max speed: %.2f %nWheels: %s %nGears: %s %n", getMaxSpeed(), getWheels(), this.gears);
     }
 
-
 }
-
 
 public class Test1ProgrammingQ1 {
     public static void main(String[] args) {
@@ -57,14 +56,13 @@ public class Test1ProgrammingQ1 {
         Vehicle[] vehicles = new Vehicle[4];
 
         vehicles[0] = new Vehicle();
-        vehicles[1] = new Vehicle(120 , 4);
-        vehicles[2] = new Bicycle(60 , 3);
+        vehicles[1] = new Vehicle(120, 4);
+        vehicles[2] = new Bicycle(60, 3);
         vehicles[3] = new Bicycle();
 
-        for(Vehicle vehicle : vehicles){
+        for (Vehicle vehicle : vehicles) {
             System.out.println(vehicle);
         }
-
 
     }
 }
