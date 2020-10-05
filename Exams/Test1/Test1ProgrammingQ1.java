@@ -1,3 +1,5 @@
+package Exams.Test1;
+
 class Vehicle {
     private double maxSpeed;
     private int wheels;
