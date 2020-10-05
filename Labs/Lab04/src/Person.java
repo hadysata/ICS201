@@ -1,3 +1,4 @@
+package Labs.Lab04.src;
 
 public class Person {
 	private String name;

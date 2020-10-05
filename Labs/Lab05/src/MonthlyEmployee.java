@@ -1,3 +1,4 @@
+package Labs.Lab05.src;
 
 public class MonthlyEmployee extends Staff {
 

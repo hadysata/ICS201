@@ -1,3 +1,4 @@
+package Labs.Lab04.src;
 
 public class Student extends Person{
 	private static final String freshman="Freshman";

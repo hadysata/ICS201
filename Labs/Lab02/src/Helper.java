@@ -1,3 +1,5 @@
+package Labs.Lab02.src;
+
 public class Helper {
 
     public static void main(String[] args) {

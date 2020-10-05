@@ -1,3 +1,5 @@
+package Labs.Lab04.src;
+
 import java.util.Date;
 
 public class Faculty extends Employee{

@@ -1,3 +1,5 @@
+package Labs.Lab03.src;
+
 public class Queue {
 
     private int[] elements;

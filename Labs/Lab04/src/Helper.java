@@ -1,3 +1,7 @@
+package Labs.Lab04.src;
+
+import Labs.Lab05.src.Staff;
+
 import java.util.Date;
 
 public class Helper {
@@ -10,7 +14,7 @@ public class Helper {
 		Employee employee= new Employee("Ali", "Office-A", date, 10000);
 		Student student= new Student("Fahad", "Good");
 		Faculty faculty = new Faculty("Mohammed", "5PM-9PM", "5th", "Office-H", date, 2000);
-		Staff staff= new Staff("Mohammed", "CTO", "Office-B", date, 140000);
+		Labs.Lab05.src.Staff staff= new Staff("Mohammed", "CTO", "Office-B", date, 140000);
 		
 		System.out.println(person.toString());
 		System.out.println(employee.toString());

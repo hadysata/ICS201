@@ -1,3 +1,5 @@
+package Labs.Lab02.src;
+
 import java.lang.Math;
 
 public class MyPoint {

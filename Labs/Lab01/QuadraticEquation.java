@@ -1,3 +1,5 @@
+package Labs.Lab01;
+
 import java.lang.Math;
 
 public class QuadraticEquation {

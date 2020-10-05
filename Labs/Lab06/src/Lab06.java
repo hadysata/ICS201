@@ -1,3 +1,5 @@
+package Labs.Lab06.src;
+
 import java.util.*;
 import java.io.*;
 
