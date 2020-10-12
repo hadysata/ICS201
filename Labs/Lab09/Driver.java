@@ -6,13 +6,13 @@ public class Driver {
     public static void main(String[] args) {
 
         try {
-            FileInputStream fileInputStream = new FileInputStream("times.txt");
+            File fileInput = new File("times.txt");
 
-            Scanner inScanner = new Scanner(fileInputStream);
+            Scanner inScanner = new Scanner(fileInput);
 
-            FileOutputStream fileOutputStream = new FileOutputStream("result.txt");
+            File fileOutput = new File("result.txt");
 
-            PrintStream printStream = new PrintStream(fileOutputStream);
+            PrintStream printStream = new PrintStream(fileOutput);
 
             printStream.printf("#\t 24-hour \t 12-hour \n-------------------------------------\n"); //Result file header
 
@@ -34,6 +34,9 @@ public class Driver {
                 printStream.printf("%s \t %s \t %s \n", lines, time, result);
 
             }
+
+            inScanner.close();
+            printStream.close();
 
             System.out.println("Process has been successfully completed.");
 
