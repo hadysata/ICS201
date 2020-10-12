@@ -1,0 +1,12 @@
+#	 24-hour 	 12-hour 
+-------------------------------------
+1 	 00:00 	 12:00 AM 
+2 	 12:00 	 12:00 PM 
+3 	 12:01 	 12:01 PM 
+4 	 11:59 	 11:59 AM 
+5 	 23:59 	 11:59 PM 
+6 	 24:00 	 Time Exception 
+7 	 10:65 	 Time Exception 
+8 	 3:23 	 Time Exception 
+9 	 1145 	 Time Exception 
+10 	 8&*68 	 Time Exception 
